@@ -5,14 +5,14 @@
 */
 @import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
-.clearfix, .i-clearfix, .main, .head__inner {
+.clearfix, .i-clearfix, .main, .head__inner, .top-nav__list {
   *zoom: 1;
 }
-.clearfix:before, .i-clearfix:before, .main:before, .head__inner:before, .clearfix:after, .i-clearfix:after, .main:after, .head__inner:after {
+.clearfix:before, .i-clearfix:before, .main:before, .head__inner:before, .top-nav__list:before, .clearfix:after, .i-clearfix:after, .main:after, .head__inner:after, .top-nav__list:after {
   display: table;
   content: "";
 }
-.clearfix:after, .i-clearfix:after, .main:after, .head__inner:after {
+.clearfix:after, .i-clearfix:after, .main:after, .head__inner:after, .top-nav__list:after {
   clear: both;
 }
 
@@ -312,10 +312,10 @@ h6 {
 }
 
 a:visited {
-  color: #9C00D6;
+  color: #726d6c;
 }
 a:link {
-  color: #0000ff;
+  color: #726d6c;
 }
 a:hover {
   color: #ff0000;
@@ -556,7 +556,7 @@ body,
 
 body {
   font: 14px "Open Sans", Tahoma, Arial, sans-serif;
-  color: #444;
+  color: #726d6c;
   background-color: #fff;
   line-height: 1.6;
   position: relative;
@@ -601,13 +601,24 @@ body * img::-webkit-selection {
 
 .head {
   background-color: #ec8790;
+  border-bottom: 5px solid #fff;
 }
 .head__inner {
   padding-left: 10px;
   padding-right: 10px;
 }
 
+.sidebar {
+  width: 290px;
+  float: right;
+}
+
+.content {
+  float: left;
+}
+
 .logo {
+  padding: 8px 0 0;
   float: left;
 }
 .logo__link {
@@ -620,8 +631,58 @@ body * img::-webkit-selection {
 }
 
 .top-nav {
-  margin: 0 auto;
+  margin: 0 10px;
   float: left;
+}
+.top-nav__list {
+  display: flex;
+}
+.top-nav__item {
+  align-items: stretch;
+  float: left;
+  margin-left: 5px;
+}
+.top-nav__item_active .top-nav__link {
+  background-color: #e8979e;
+}
+.top-nav__item_active .top-nav__link:visited {
+  color: #fff;
+}
+.top-nav__item_active .top-nav__link:link {
+  color: #fff;
+}
+.top-nav__item_active .top-nav__link:hover {
+  color: #fff;
+}
+.top-nav__item_active .top-nav__link:active {
+  color: #fff;
+}
+.top-nav__link {
+  display: block;
+  text-decoration: none;
+  padding: 17px 5px;
+  border-top: 3px solid #ddc8c7;
+}
+.top-nav__link:visited {
+  color: #ddc8c7;
+}
+.top-nav__link:link {
+  color: #ddc8c7;
+}
+.top-nav__link:hover {
+  color: #fff;
+}
+.top-nav__link:active {
+  color: #fff;
+}
+
+.main-picture {
+  display: block;
+}
+.main-picture__link {
+  display: block;
+  line-height: 1px;
+  vertical-align: top;
 }
 
 @media print {

@@ -26,6 +26,9 @@
 @import "blocks/logo";
 @import "blocks/social-links";
 @import "blocks/top-nav";
+@import "blocks/main-picture";
+@import "blocks/contacts";
+@import "blocks/navigation";
 
 @media print {
 	@import "basic/print"; // стили для печати

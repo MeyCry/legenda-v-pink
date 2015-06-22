@@ -22,8 +22,10 @@ $titleFamily: Georgia, Times, serif; // заголовки
 $white: #fff;
 $black: #000;
 $gray: lighten($black, 70);
+$grayLight: #ddc8c7;
 $red: #ff0000;
 $pink: #ec8790;
+$lightPink: #e8979e;
 $violet: #cc00ff;
 $blue: #0000ff;
 $green: #00ff33;
@@ -31,14 +33,14 @@ $yellow: #ffff00;
 $orange: #ff9900;
 
 // цвет текста
-$textColor: #444;
+$textColor: #726d6c;
 $placeholderColor: lighten($black, 30);
 
 // задаем цвет ссылок
-$linkColor: #0000ff;
+$linkColor: $textColor;
 $linkColorHover: $red;
 $linkColorActive: darken($red, 25);
-$linkColorVisited: #9C00D6;
+$linkColorVisited: $linkColor;
 
 // цвет фона выделения текста на странице
 $selectionColor: #b4d5fe;

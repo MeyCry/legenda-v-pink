@@ -1,14 +1,29 @@
-.top-nav{
-    margin: 0 auto;
+.top-nav {
+  margin: 0 10px;
+  float: left;
+
+  &__list {
+    @extend .clearfix;
+    display: flex;
+  }
+  &__item {
+    align-items: stretch;
     float: left;
+    margin-left: 5px;
 
-    &__list{
+    &_active{
 
+      .top-nav__link{
+        background-color: $lightPink;
+        @include href($white, $white, $white, $white);
+      }
     }
-    &__item{
-
-    }
-    &__link{
-
-    }
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    padding: 17px 5px;
+    border-top: 3px solid $grayLight;
+    @include href($grayLight, $white, $white, $grayLight);
+  }
 }

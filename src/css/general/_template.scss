@@ -46,6 +46,7 @@ body {
 
 .head {
   background-color: $pink;
+  border-bottom: 5px solid $white;
 
   &__inner {
     padding-left: 10px;
@@ -53,4 +54,13 @@ body {
     @extend .i-container;
     @extend .clearfix;
   }
+}
+
+.sidebar{
+  width: 290px;
+  float: right;
+}
+
+.content{
+  float: left;
 }

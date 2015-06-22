@@ -1,7 +1,10 @@
 <!DOCTYPE HTML>
-<html lang="ru-RU">
+<html lang="ru-RU" prefix="og: http://ogp.me/ns#" >
+<!--Указание используемых префиксов-->
 <head>
     <meta charset="UTF-8">
+    <meta property="og:type" content="website" />
+
     <title>Учебный центр маникюра "Legenda-v"</title>
     <meta name="description" content="Курсы маникюра для начинающих и профессионалов">
     <meta name="keywords" content="Маникюр, курсы-манкюра, обучение, педикюр, уход, ногти">
@@ -26,18 +29,51 @@
             </div>
             <nav class="top-nav">
                 <ul class="top-nav__list">
-                    <li class="top-nav__item">
-                        <a href="/" class="top-nav__link">Главная</a>
-                    </li>
+                    <li class="top-nav__item top-nav__item_active"><a href="/" class="top-nav__link">Главная</a></li>
+                    <li class="top-nav__item"><a class="top-nav__link" href="#">О компании</a></li>
+                    <li class="top-nav__item"><a class="top-nav__link" href="#">Курсы и цены</a></li>
+                    <li class="top-nav__item"><a class="top-nav__link" href="#">Моделям</a></li>
+                    <li class="top-nav__item"><a class="top-nav__link" href="#">Фотогалерея</a></li>
+                    <li class="top-nav__item"><a class="top-nav__link" href="#">Сотрудничество</a></li>
+                    <li class="top-nav__item"><a class="top-nav__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
             <div class="social-links social-links_right">
-
+                social
             </div>
         </div>
     </header>
     <section class="main">
         <div class="main__inner">
+            <section class="content">
+
+                <!-- todo: need a slider  -->
+                <figure class="main-picture">
+                    <a class="main-picture__link" href="#">
+                        <img class="main-picture__img" src="public/image/content/main-image.jpg" alt=""/>
+                    </a>
+                </figure>
+
+            </section>
+            <aside class="sidebar">
+                <div class="contacts">
+                    <p class="contacts__sub-title">Учебный центр "Legend" Ltd</p>
+                    <p class="contacts__phone">+38 (093) 519-05-37</p>
+                    <p class="contacts__text">г. Киев, ул. Богдана Хмельницкого, 45б</p>
+                    <p class="contacts__text"><span>email:</span> <a class="email" href="mailto:manicure@legenda-v.in.ua">manicure@legenda-v.in.ua</a></p>
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__link" href="#">Базовый курс маникюра</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">Полный курс маникюра и педикюра</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">Экспресс курс маникюра</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">Моделирование ногтей</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">Наращивание ресниц</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">Розпись хной</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">Спа-процедуры для рук</a></li>
+                    </ul>
+                </nav>
+            </aside>
 
         </div>
     </section>
@@ -48,8 +84,8 @@
     </div>
 </footer>
 
-<script type="text/javascript" src="public/js/lib.js"></script>
-<script type="text/javascript" src="public/js/project.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<!--<script type="text/javascript" src="public/js/lib.js"></script>-->
+<!--<script type="text/javascript" src="public/js/project.js"></script>-->
 </body>
 </html>
