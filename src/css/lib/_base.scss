@@ -16,13 +16,15 @@ $lobster: "Lobster", Tahoma, Arial, sans-serif;
 $italic: Arial, sans-serif;
 $bold: Tahoma, Arial, sans-serif;
 
-$titleFamily: Georgia, Times, serif; // заголовки
+$titleFamily: "Lobster", Georgia, Times, serif; // заголовки
 
 // повышаем читабельность основных цветов
 $white: #fff;
+$whiteLight: #f3e8e6;
 $black: #000;
 $gray: lighten($black, 70);
 $grayLight: #ddc8c7;
+
 $red: #ff0000;
 $pink: #ec8790;
 $lightPink: #e8979e;

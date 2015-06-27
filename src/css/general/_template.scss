@@ -26,10 +26,18 @@ body {
 }
 
 .main {
-  @extend .i-container;
-  @extend .clearfix;
-  padding-bottom: $footerHeight;
   position: relative;
+
+  &__inner{
+    @extend .i-container;
+    @extend .clearfix;
+  }
+  &_gray{
+    background-color: $whiteLight;
+  }
+  &_foot-indent{
+    padding-bottom: $footerHeight;
+  }
 }
 
 .foot {
@@ -44,9 +52,19 @@ body {
   @extend .i-container;
 }
 
+.head-wrap{
+  height: 64px;
+  position: relative;
+  z-index: 2;
+}
 .head {
   background-color: $pink;
   border-bottom: 5px solid $white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 
   &__inner {
     padding-left: 10px;

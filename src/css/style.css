@@ -5,14 +5,14 @@
 */
 @import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
-.clearfix, .i-clearfix, .main, .head__inner, .top-nav__list {
+.clearfix, .i-clearfix, .main__inner, .head__inner, .top-nav__list {
   *zoom: 1;
 }
-.clearfix:before, .i-clearfix:before, .main:before, .head__inner:before, .top-nav__list:before, .clearfix:after, .i-clearfix:after, .main:after, .head__inner:after, .top-nav__list:after {
+.clearfix:before, .i-clearfix:before, .main__inner:before, .head__inner:before, .top-nav__list:before, .clearfix:after, .i-clearfix:after, .main__inner:after, .head__inner:after, .top-nav__list:after {
   display: table;
   content: "";
 }
-.clearfix:after, .i-clearfix:after, .main:after, .head__inner:after, .top-nav__list:after {
+.clearfix:after, .i-clearfix:after, .main__inner:after, .head__inner:after, .top-nav__list:after {
   clear: both;
 }
 
@@ -273,7 +273,7 @@ video {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1.6;
-  font-family: Georgia, Times, serif;
+  font-family: "Lobster", Georgia, Times, serif;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 65%;
@@ -498,7 +498,7 @@ article tr.even td:hover {
   visibility: hidden;
 }
 
-.i-container, .main, .foot__inner, .head__inner {
+.i-container, .main__inner, .foot__inner, .head__inner {
   padding-left: 10px;
   padding-right: 10px;
   margin-left: auto;
@@ -587,8 +587,13 @@ body * img::-webkit-selection {
 }
 
 .main {
-  padding-bottom: 150px;
   position: relative;
+}
+.main_gray {
+  background-color: #f3e8e6;
+}
+.main_foot-indent {
+  padding-bottom: 150px;
 }
 
 .foot {
@@ -599,9 +604,20 @@ body * img::-webkit-selection {
   clear: both;
 }
 
+.head-wrap {
+  height: 64px;
+  position: relative;
+  z-index: 2;
+}
+
 .head {
   background-color: #ec8790;
   border-bottom: 5px solid #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 .head__inner {
   padding-left: 10px;
