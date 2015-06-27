@@ -272,7 +272,7 @@ video {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  line-height: 1.6;
+  line-height: 1.4;
   font-family: "Lobster", Georgia, Times, serif;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -290,12 +290,12 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   margin: 15px 0 10px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 18px;
   margin: 11px 0 7px;
 }
 
@@ -503,8 +503,8 @@ article tr.even td:hover {
   padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 1060px;
-  max-width: 1060px;
+  min-width: 1050px;
+  max-width: 1050px;
 }
 
 input, textarea, select, option {
@@ -612,7 +612,7 @@ body * img::-webkit-selection {
 
 .head {
   background-color: #ec8790;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid #f3e8e6;
   position: fixed;
   left: 0;
   top: 0;
@@ -630,6 +630,7 @@ body * img::-webkit-selection {
 }
 
 .content {
+  width: 730px;
   float: left;
 }
 
@@ -696,9 +697,98 @@ body * img::-webkit-selection {
   display: block;
 }
 .main-picture__link {
+  outline: none;
   display: block;
   line-height: 1px;
   vertical-align: top;
+}
+.main-picture__link:focus {
+  outline: none;
+}
+
+.contacts {
+  text-align: center;
+  line-height: 1.2;
+  padding: 10px 10px;
+  margin: 0 0 10px;
+  background-color: #ebdddb;
+}
+.contacts__sub-title {
+  font-size: 15px;
+}
+.contacts__phone {
+  font-size: 20px;
+  margin: 5px 0;
+}
+.contacts__text {
+  margin: 0 0 5px;
+}
+
+.navigation {
+  background-color: #e5d4d3;
+  background-image: -moz-linear-gradient(top, #ddc8c7, #f3e8e6);
+  background-image: -ms-linear-gradient(top, #ddc8c7, #f3e8e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ddc8c7), to(#f3e8e6));
+  background-image: -webkit-linear-gradient(top, #ddc8c7, #f3e8e6);
+  background-image: -o-linear-gradient(top, #ddc8c7, #f3e8e6);
+  background-image: linear-gradient(top, #ddc8c7, #f3e8e6);
+  background-repeat: repeat-y;
+}
+.navigation__list {
+  padding: 15px 0;
+  margin: 0 10px;
+  background: url('../image/content/flower.png?1435409412') right bottom no-repeat;
+}
+.navigation__item {
+  margin: 0 0 2px;
+}
+.navigation__link {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+}
+.navigation__link:visited {
+  color: #726d6c;
+}
+.navigation__link:link {
+  color: #726d6c;
+}
+.navigation__link:hover {
+  color: #fff;
+}
+.navigation__link:active {
+  color: #fff;
+}
+.navigation__link:hover {
+  background-color: rgba(231, 171, 175, 0.7);
+}
+
+.reasons-to-choose {
+  padding: 20px 0;
+}
+.reasons-to-choose__title {
+  font-size: 22px;
+  text-align: center;
+  line-height: 1.4;
+}
+.reasons-to-choose__list {
+  overflow: hidden;
+}
+.reasons-to-choose__item {
+  width: 50%;
+  float: left;
+}
+
+.text-with-title {
+  text-align: center;
+  padding: 20px 10px;
+}
+.text-with-title__title {
+  color: #ec8790;
+  font-family: "Lobster", Tahoma, Arial, sans-serif;
+}
+.text-with-title__text {
+  font-size: 16px;
 }
 
 @media print {

@@ -1,0 +1,13 @@
+// Vive tautology
+.text-with-title{
+  text-align: center;
+  padding: 20px 10px;
+
+  &__title{
+    color: $pink;
+    font-family: $lobster;
+  }
+  &__text{
+    font-size: $bigfont;
+  }
+}

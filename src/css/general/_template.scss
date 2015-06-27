@@ -28,14 +28,15 @@ body {
 .main {
   position: relative;
 
-  &__inner{
+  &__inner {
     @extend .i-container;
     @extend .clearfix;
   }
-  &_gray{
+  &_gray {
     background-color: $whiteLight;
+    //@include gradient-vertical(#f3e8e6, #f3e8e6);
   }
-  &_foot-indent{
+  &_foot-indent {
     padding-bottom: $footerHeight;
   }
 }
@@ -52,14 +53,15 @@ body {
   @extend .i-container;
 }
 
-.head-wrap{
+.head-wrap {
   height: 64px;
   position: relative;
   z-index: 2;
 }
+
 .head {
   background-color: $pink;
-  border-bottom: 5px solid $white;
+  border-bottom: 5px solid $whiteLight;
   position: fixed;
   left: 0;
   top: 0;
@@ -74,11 +76,12 @@ body {
   }
 }
 
-.sidebar{
+.sidebar {
   width: 290px;
   float: right;
 }
 
-.content{
+.content {
+  width: 730px;
   float: left;
 }

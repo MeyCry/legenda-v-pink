@@ -2,9 +2,14 @@
   display: block;
 
   &__link{
+    outline: none;
     display: block;
     line-height: 1px;
     vertical-align: top;
+
+    &:focus{
+      outline: none;
+    }
   }
   &__img{
 

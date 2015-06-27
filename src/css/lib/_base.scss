@@ -23,6 +23,7 @@ $white: #fff;
 $whiteLight: #f3e8e6;
 $black: #000;
 $gray: lighten($black, 70);
+$grayLighten: #ebdddb;
 $grayLight: #ddc8c7;
 
 $red: #ff0000;
@@ -49,7 +50,7 @@ $selectionColor: #b4d5fe;
 
 
 // ширина
-$fixedWidth: 1080px;
+$fixedWidth: 1070px;
 $maxWidth: $fixedWidth;
 $minWidth: $fixedWidth;
 

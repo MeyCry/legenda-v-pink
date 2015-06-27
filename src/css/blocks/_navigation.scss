@@ -1,12 +1,25 @@
 .navigation {
+  @include gradient-vertical(#ddc8c7, $whiteLight);
 
   &__list {
+    padding: 15px 0;
+    margin: 0 10px;
+    background: image-url("content/flower.png") right bottom no-repeat;
 
   }
   &__item {
+    margin: 0 0 2px;
 
   }
   &__link {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    @include href($linkColor, $white, $white, $linkColor);
 
+    &:hover{
+      background-color: rgba(#e7abaf, .7);
+
+    }
   }
 }

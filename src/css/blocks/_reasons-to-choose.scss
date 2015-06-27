@@ -1,0 +1,16 @@
+.reasons-to-choose{
+  padding: 20px 0;
+
+  &__title{
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.4;
+  }
+  &__list{
+    overflow: hidden;
+  }
+  &__item{
+    width: 50%;
+    float: left;
+  }
+}
